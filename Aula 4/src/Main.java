@@ -14,8 +14,6 @@ public class Main {
         zumbi1.andar();
         zumbi2.andar();
 
-
-
         System.out.println("Qual o nome do zumbi escolhido? ");
         String entrada = input.nextLine();
 
@@ -52,10 +50,10 @@ public class Main {
             zumbi2.transfereVida(zumbi1,hpdoado);
         }
 
-        zumbi1.mostrarVida();
+        System.out.println(zumbi1.mostrarVida());
         zumbi1.info();
 
-        zumbi2.mostrarVida();
+        System.out.println(zumbi2.mostrarVida());
         zumbi2.info();
 
 
