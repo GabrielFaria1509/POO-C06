@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -52,7 +53,10 @@ public class Main {
         }
 
         zumbi1.mostrarVida();
+        zumbi1.info();
+
         zumbi2.mostrarVida();
+        zumbi2.info();
 
 
 
