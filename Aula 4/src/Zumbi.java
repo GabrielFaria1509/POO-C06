@@ -6,7 +6,11 @@ public class Zumbi {
         System.out.println(nome + " está andando");
     }
 
-    public void mostrarVida(){
+    public double mostrarVida(){
+        return vida;
+    }
+
+    public void info(){
         System.out.println("Nome zumbi :" + nome);
         System.out.println("Vida :" + vida);
     }
