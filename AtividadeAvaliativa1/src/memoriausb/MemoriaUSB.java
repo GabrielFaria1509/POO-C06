@@ -1,6 +1,6 @@
-package PastaHardware;
+package memoriausb;
 
-public class HardwareBasico {
+public class MemoriaUSB {
     private String nome;
     private float capacidade;
 

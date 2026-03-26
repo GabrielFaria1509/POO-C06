@@ -1,16 +1,16 @@
-package PastaMemoriaUSB;
+package hardware;
 
-public class MemoriaUSB {
+public class HardwareBasico {
     private String nome;
-    private int capacidade;
+    private float capacidade;
 
     //Getters e Setters
 
-    public int getCapacidade() {
+    public float getCapacidade() {
         return capacidade;
     }
 
-    public void setCapacidade(int capacidade) {
+    public void setCapacidade(float capacidade) {
         this.capacidade = capacidade;
     }
 

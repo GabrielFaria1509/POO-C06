@@ -1,12 +1,10 @@
-package PastaOS;
+package os;
 
 public class Sistemaoperacional {
     private String nome;
     private int tipo;
 
     //Getters e Setters
-
-
     public int getTipo() {
         return tipo;
     }

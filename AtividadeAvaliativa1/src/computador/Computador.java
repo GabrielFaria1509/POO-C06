@@ -1,18 +1,18 @@
-package PastaPC;
-
-import PastaHardware.HardwareBasico;
-import PastaMemoriaUSB.MemoriaUSB;
-import PastaOS.Sistemaoperacional;
+package computador;
+import hardware.HardwareBasico;
+import memoriausb.MemoriaUSB;
+import os.Sistemaoperacional;
 
 public class Computador {
     private String marca;
     private float preco;
     private Sistemaoperacional sistemaoperacional; //composição==preciso de construtor
-    private HardwareBasico [] hardwareBasico; //composição ==preciso de construtor
+    private HardwareBasico[] hardwareBasico; //composição ==preciso de construtor
     private MemoriaUSB memoriaUSB; //agregação não preciso de construtor
 
 
-    public Computador(Sistemaoperacional sistemaoperacional, HardwareBasico[] hardwareBasico) {
+    //Composição com os dois,preciso de um construtor
+    public Computador(Sistemaoperacional sistemaoperacional,HardwareBasico[] hardwareBasico) {
         this.sistemaoperacional = sistemaoperacional;
         this.hardwareBasico = hardwareBasico;
     }
