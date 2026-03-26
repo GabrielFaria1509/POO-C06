@@ -56,7 +56,7 @@ public class Main {
                 int linha = entrada.nextInt();
                 int coluna = entrada.nextInt();
 
-                if (matriz[linha][coluna].ativo == false) {
+                if (!matriz[linha][coluna].ativo) {
                     System.out.println("Não há bomba");
                 } else {
                     matriz[linha][coluna].ativo = true;
