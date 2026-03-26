@@ -1,5 +1,6 @@
 package PastaPC;
 
+import PastaHardware.HardwareBasico;
 import PastaMemoriaUSB.MemoriaUSB;
 import PastaOS.Sistemaoperacional;
 
@@ -7,10 +8,15 @@ public class Computador {
     private String marca;
     private float preco;
     private Sistemaoperacional sistemaoperacional; //composição==preciso de construtor
+    private HardwareBasico hardwareBasico; //composição ==preciso de construtor
     private MemoriaUSB memoriaUSB; //agregação não preciso de construtor
 
     public Computador(Sistemaoperacional sistemaoperacional) {
         this.sistemaoperacional = sistemaoperacional;
+    }
+
+    public Computador(HardwareBasico hardwareBasico) {
+        this.hardwareBasico = hardwareBasico;
     }
 
     //Setters e Getters
@@ -37,5 +43,21 @@ public class Computador {
 
     public void setSistemaoperacional(Sistemaoperacional sistemaoperacional) {
         this.sistemaoperacional = sistemaoperacional;
+    }
+
+    public HardwareBasico getHardwareBasico() {
+        return hardwareBasico;
+    }
+
+    public void setHardwareBasico(HardwareBasico hardwareBasico) {
+        this.hardwareBasico = hardwareBasico;
+    }
+
+    public MemoriaUSB getMemoriaUSB() {
+        return memoriaUSB;
+    }
+
+    public void setMemoriaUSB(MemoriaUSB memoriaUSB) {
+        this.memoriaUSB = memoriaUSB;
     }
 }
