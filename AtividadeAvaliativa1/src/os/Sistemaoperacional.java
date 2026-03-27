@@ -21,7 +21,7 @@ public class Sistemaoperacional {
         this.nome = nome;
     }
 
-    public Sistemaoperacional(int tipo, String nome) {
+    public Sistemaoperacional(String nome, int tipo) {
         this.tipo = tipo;
         this.nome = nome;
     }

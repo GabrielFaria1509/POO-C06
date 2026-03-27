@@ -24,7 +24,7 @@ public class MemoriaUSB {
 
    //construtor
 
-    public MemoriaUSB(float capacidade, String nome) {
+    public MemoriaUSB(String nome, float capacidade) {
         this.capacidade = capacidade;
         this.nome = nome;
     }

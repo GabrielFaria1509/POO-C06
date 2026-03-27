@@ -14,7 +14,7 @@ public class Computador {
     //Composição com os dois,preciso de um construtor
     public Computador(Sistemaoperacional sistemaoperacional,HardwareBasico[] hardwareBasico) {
         this.sistemaoperacional = sistemaoperacional;
-        this.hardwareBasico = new HardwareBasico[2]; //declaroi tamanho
+        this.hardwareBasico = new HardwareBasico[10]; //declaroi tamanho
 
         for(int i = 0; i < hardwareBasico.length; i++){
             if(hardwareBasico[i] != null){

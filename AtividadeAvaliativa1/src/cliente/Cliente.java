@@ -4,12 +4,12 @@ import computador.Computador;
 
 public class Cliente {
     private String nome;
-    private long cpf;
+    private String cpf;
     private Computador[] computador = new Computador[3];  //incializa vetor de computadore
     //cliente pode ter vários computadores
 
     //Construtor
-    public Cliente(long cpf, String nome) {
+    public Cliente(String nome, String cpf) {
         this.cpf = cpf;
         this.nome = nome;
     }
@@ -18,7 +18,7 @@ public class Cliente {
 
     //Setters e Getters
 
-    public void setCpf(long cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
