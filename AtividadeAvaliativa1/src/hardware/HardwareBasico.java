@@ -10,15 +10,9 @@ public class HardwareBasico {
         return capacidade;
     }
 
-    //construtor
-
-
-    public HardwareBasico(String nome, float capacidade) {
+    public void setCapacidade(float capacidade) {
         this.capacidade = capacidade;
-        this.nome = nome;
     }
-
-
 
     public String getNome() {
         return nome;
@@ -27,4 +21,14 @@ public class HardwareBasico {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    //construtor
+    public HardwareBasico(String nome, float capacidade) {
+        this.capacidade = capacidade;
+        this.nome = nome;
+    }
+
+
+
+
 }
