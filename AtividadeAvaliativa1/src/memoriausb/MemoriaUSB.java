@@ -21,4 +21,11 @@ public class MemoriaUSB {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+   //construtor
+
+    public MemoriaUSB(float capacidade, String nome) {
+        this.capacidade = capacidade;
+        this.nome = nome;
+    }
 }

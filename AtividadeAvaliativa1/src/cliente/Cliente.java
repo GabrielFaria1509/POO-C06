@@ -4,12 +4,12 @@ import computador.Computador;
 
 public class Cliente {
     private String nome;
-    private String cpf;
+    private long cpf;
     private Computador[] computador = new Computador[3];  //incializa vetor de computadore
     //cliente pode ter vários computadores
 
     //Construtor
-    public Cliente(String cpf, String nome) {
+    public Cliente(long cpf, String nome) {
         this.cpf = cpf;
         this.nome = nome;
     }
@@ -18,11 +18,7 @@ public class Cliente {
 
     //Setters e Getters
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
+    public void setCpf(long cpf) {
         this.cpf = cpf;
     }
 
@@ -36,9 +32,25 @@ public class Cliente {
 
     public Computador[] getComputador() {
         return computador;
-    }
+    } //composição
 
     public void setComputador(Computador[] computador) {
         this.computador = computador;
+    }
+
+
+
+    //metodo
+    //retorna o preço total do pedido
+    public float calulaTotoalCompra(){
+        float soma = 0;
+        for(Computador c : computador){
+            if(c != null){
+                soma += c.getPreco();
+
+            }
+        }
+
+        return soma;
     }
 }

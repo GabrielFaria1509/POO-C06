@@ -20,4 +20,9 @@ public class Sistemaoperacional {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public Sistemaoperacional(int tipo, String nome) {
+        this.tipo = tipo;
+        this.nome = nome;
+    }
 }

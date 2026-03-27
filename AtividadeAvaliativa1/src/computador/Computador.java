@@ -14,7 +14,13 @@ public class Computador {
     //Composição com os dois,preciso de um construtor
     public Computador(Sistemaoperacional sistemaoperacional,HardwareBasico[] hardwareBasico) {
         this.sistemaoperacional = sistemaoperacional;
-        this.hardwareBasico = hardwareBasico;
+        this.hardwareBasico = new HardwareBasico[2]; //declaroi tamanho
+
+        for(int i = 0; i < hardwareBasico.length; i++){
+            if(hardwareBasico[i] != null){
+               this.hardwareBasico[i] = hardwareBasico[i];
+            }
+        }
     }
 
     //Setters e Getters
@@ -39,7 +45,8 @@ public class Computador {
         return sistemaoperacional;
     }
 
-    public void setSistemaoperacional(Sistemaoperacional sistemaoperacional) {
+    public void setSistemaoperacional(Sistemaoperacional sistemaoperacional) {  //já tem o construtor
+        //setter é para caso altere esse atributo
         this.sistemaoperacional = sistemaoperacional;
     }
 
