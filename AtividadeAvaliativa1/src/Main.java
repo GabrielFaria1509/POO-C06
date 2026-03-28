@@ -76,6 +76,7 @@ public class Main {
                     computador1.setMemoriaUSB(memoriaUSBPromo1);
                 }
                 computador[i] = computador1;
+
                 //Cliente escolheu pc com primeira config
             }
             else if(opcaopromo == 2){
@@ -101,12 +102,22 @@ public class Main {
 
                 computador[i] = computador3;
             }
-
             else{
                 break;
             }
+
+        }
+
+        System.out.println("Resumo da compra");
+
+        for(int i = 0; i < computador.length; i++){
+            if(computador[i] != null){
+                System.out.println("Computador " + (i+1) + ":");
+                computador[i].MostraPCConfigs();
+            }
         }
         ProcessarPedido.exeutarPedido(computador);
+
         input.close();
     }
 }

@@ -22,10 +22,6 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -36,21 +32,5 @@ public class Cliente {
 
     public void setComputador(Computador[] computador) {
         this.computador = computador;
-    }
-
-
-
-    //metodo
-    //retorna o preço total do pedido
-    public float calulaTotoalCompra(){
-        float soma = 0;
-        for(Computador c : computador){
-            if(c != null){
-                soma += c.getPreco();
-
-            }
-        }
-
-        return soma;
     }
 }
