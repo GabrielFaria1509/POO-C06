@@ -5,7 +5,6 @@ public class MemoriaUSB {
     private float capacidade;
 
     //Getters e Setters
-
     public float getCapacidade() {
         return capacidade;
     }

@@ -116,6 +116,8 @@ public class Main {
                 computador[i].MostraPCConfigs();
             }
         }
+
+        float v = cliente.calculatotalCompra();
         ProcessarPedido.exeutarPedido(computador);
 
         input.close();

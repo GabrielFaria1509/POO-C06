@@ -62,6 +62,7 @@ public class Computador {
         return hardwareBasico;
     }
 
+
     public void MostraPCConfigs(){
         System.out.println("Marca: " + this.marca);
         System.out.println("Preco: " + this.preco);
