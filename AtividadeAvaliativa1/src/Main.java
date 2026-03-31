@@ -91,6 +91,7 @@ public class Main {
                 computador[i] = computador2;
             }
             else if(opcaopromo == 3){
+                //crio objeto computador
                 Computador computador3 = new Computador(sistemaoperacionalpromo3,hwsPromo3);
                 computador3.setMarca("Dell");
                 computador3.setPreco(6435);
@@ -114,12 +115,21 @@ public class Main {
             if(computador[i] != null){
                 System.out.println("Computador " + (i+1) + ":");
                 computador[i].MostraPCConfigs();
+                //mostra as informações de cada pc separado
+                //não coloquei os pcs na veotr de pc do cliente
             }
         }
 
+        //passo o vetor de computadores para ser setado pelo cliente
+        //passo o vetor de compuatdores prontos pro vetor de pc do cliente
+        cliente.setComputador(computador);
         float v = cliente.calculatotalCompra();
         ProcessarPedido.exeutarPedido(computador);
 
+        System.out.println("Valor total compra : " + v);
+
         input.close();
     }
+
+
 }

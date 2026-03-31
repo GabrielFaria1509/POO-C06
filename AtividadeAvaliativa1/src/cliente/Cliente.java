@@ -26,6 +26,8 @@ public class Cliente {
         return computador;
     } //composição
 
+    //uso para quando quero manipular o veotr cok os com compitadores já prontos
+    //o veotr é uma sacola de compra do cliente
     public void setComputador(Computador[] computador) {
         this.computador = computador;
     }
