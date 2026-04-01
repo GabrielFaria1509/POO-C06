@@ -36,10 +36,7 @@ public class Computador {
     public Sistemaoperacional getSistemaoperacional() {
         return sistemaoperacional;
     }
-    public void setSistemaoperacional(Sistemaoperacional sistemaoperacional) {
-        //setter é para caso altere esse atributo
-        this.sistemaoperacional = sistemaoperacional;
-    }
+
     public void setHardwareBasico(HardwareBasico[] hardwareBasico) {
         this.hardwareBasico = hardwareBasico;
     }

@@ -10,10 +10,6 @@ public class HardwareBasico {
         return capacidade;
     }
 
-    public void setCapacidade(float capacidade) {
-        this.capacidade = capacidade;
-    }
-
     public String getNome() {
         return nome;
     }

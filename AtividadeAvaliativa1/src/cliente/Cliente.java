@@ -13,14 +13,7 @@ public class Cliente {
         this.cpf = cpf;
         this.nome = nome;
     }
-    //Setters e Getters
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public Computador[] getComputador() {
         return computador;
