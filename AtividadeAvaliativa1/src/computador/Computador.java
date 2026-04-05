@@ -3,15 +3,12 @@ import hardware.HardwareBasico;
 import memoriausb.MemoriaUSB;
 import os.Sistemaoperacional;
 
-import java.util.Arrays;
-
 public class Computador {
     private String marca;
     private float preco;
     private Sistemaoperacional sistemaoperacional; //composição==preciso de construtor
     private HardwareBasico[] hardwareBasico; //composição ==preciso de construtor
     private MemoriaUSB memoriaUSB; //agregação não preciso de construtor
-
 
 
     //Composição com os dois,preciso de um construtor
@@ -32,31 +29,14 @@ public class Computador {
     }
     public void setPreco(float preco) {
         this.preco = preco;
-    };
-    public Sistemaoperacional getSistemaoperacional() {
-        return sistemaoperacional;
     }
 
-    public void setHardwareBasico(HardwareBasico[] hardwareBasico) {
-        this.hardwareBasico = hardwareBasico;
-    }
-    public HardwareBasico getHardwareBasico(int posicao) {
-        return this.hardwareBasico[posicao];
-    }
     public void setMemoriaUSB(MemoriaUSB memoriaUSB) {
         this.memoriaUSB = memoriaUSB;
     }
-    public MemoriaUSB getMemoriaUSB() {
-        return memoriaUSB;
-    }
-    public String getMarca() {
-        return marca;
-    }
+
     public float getPreco() {
         return preco;
-    }
-    public HardwareBasico[] getHardwareBasico() {
-        return hardwareBasico;
     }
 
 
@@ -67,10 +47,10 @@ public class Computador {
         if(memoriaUSB != null){
             System.out.println("MemoriaUSB: " + this.memoriaUSB.getNome()+ " (" + this.memoriaUSB.getCapacidade() + " Gb)");
         }
-        for(int i = 0; i < hardwareBasico.length; i++){
-            if(hardwareBasico[i] != null){ //preciso ter certeza que tem algo alocado na memória
-                System.out.println("HardwareBasico: " + this.hardwareBasico[i].getNome() + " Capacidade : " + this.hardwareBasico[i].getCapacidade());
-            }
+        for (HardwareBasico basico : hardwareBasico) {
+            //preciso ter certeza que tem algo alocado na memória
+            if (basico != null)
+                System.out.println("HardwareBasico: " + basico.getNome() + " Capacidade : " + basico.getCapacidade());
         }
     }
 }

@@ -15,10 +15,6 @@ public class Cliente {
     }
 
 
-    public Computador[] getComputador() {
-        return computador;
-    } //composição
-
     //uso para quando quero manipular o veotr cok os com compitadores já prontos
     //o veotr é uma sacola de compra do cliente
     public void setComputador(Computador[] computador) {
@@ -27,10 +23,10 @@ public class Cliente {
 
     public float calculatotalCompra(){
         float soma = 0;
-        for(int i = 0;i < computador.length;i++){
-                if(computador[i] != null){
-                    soma += computador[i].getPreco();
-                }
+        for (Computador value : computador) {
+            if (value != null) {
+                soma += value.getPreco();
+            }
         }
 
         return soma;
