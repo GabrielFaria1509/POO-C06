@@ -31,7 +31,11 @@ public class Main {
        browniecafe.calculaValorTotalCompra(browniecafe.getPreco());
        brownienut.calculaValorTotalCompra(brownienut.getPreco());
 
+
        Comprador cliente = new Comprador("Faria",35.60F);
+
+       System.out.println("Cliente : " + cliente.getNome() );
+       System.out.println("Cliente saldo : " + cliente.getSaldo());
       cliente.Compra(browniecafe);
       cliente.Compra(browniedll);
       cliente.Compra(brownienut);

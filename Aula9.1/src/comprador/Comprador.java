@@ -12,6 +12,14 @@ public class Comprador {
         this.saldo = saldo;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
     //Como comprador recebe a superclasse ele consegue acessa as subclasses
     public void Compra(Brownie brownie){
 
