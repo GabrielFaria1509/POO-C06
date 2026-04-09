@@ -14,10 +14,19 @@ public class Brownie {
     }
 
     //Metodos
+
     public void addCarrinho(){
         System.out.println("Adicionando ao carrinho");
     }
 
+    //Getter //Setter
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSabor() {
+        return sabor;
+    }
 
     public void calculaValorTotalCompra(double preco){
         System.out.println("Preço total : " + this.preco );

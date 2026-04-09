@@ -2,6 +2,7 @@ import brownie.Brownie;
 import browniecafé.BrownieCafe;
 import browniedocedeleite.BrownieDoceDeLeite;
 import brownienutella.BrownieNutella;
+import comprador.Comprador;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -29,6 +30,13 @@ public class Main {
        browniedll.calculaValorTotalCompra(browniedll.getPreco());
        browniecafe.calculaValorTotalCompra(browniecafe.getPreco());
        brownienut.calculaValorTotalCompra(brownienut.getPreco());
+
+       Comprador cliente = new Comprador("Faria",35.60F);
+      cliente.Compra(browniecafe);
+      cliente.Compra(browniedll);
+      cliente.Compra(brownienut);
+
+
 
 
 

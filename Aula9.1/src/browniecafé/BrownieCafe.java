@@ -12,4 +12,9 @@ public class BrownieCafe extends Brownie {
     public void adicionaCafe(){
         System.out.println("Adicionando café");
     }
+
+    @Override
+    public void addCarrinho() {
+        System.out.println("Adicionando brownie de café ao carrinho");
+    }
 }
