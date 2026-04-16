@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int quantidade = 0;
-        Bomba[][] matriz = new Bomba[6][6];
+        Bomba[][] matriz = new Bomba[6][6]; //instancio a matriz
         Player player =  new Player();
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
-                matriz[i][j] = new Bomba();
+                matriz[i][j] = new Bomba(); //instancio as células
                 //guardo objeto no lugar null
             }
         }

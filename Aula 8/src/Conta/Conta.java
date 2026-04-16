@@ -23,17 +23,6 @@ public class Conta {
         return clientes;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public double getSaldo() {  //saldo só quero mostrar
-        return saldo;
-    }
-    public double getLimite() {
-        return limite;
-    }
-
     public void setLimite(double limite) {
         this.limite = limite;
     }
@@ -48,7 +37,7 @@ public class Conta {
     public void Sacar(double quantia){
         if(saldo > 0){
             saldo -= quantia;
-            System.out.println("Saldo : "  + saldo + "Quantia sacada : " + quantia);
+            System.out.println("Saldo : "  + saldo + " Quantia sacada : " + quantia);
         }else {
             System.out.println("Saldo insuficiente ! ");
         }
