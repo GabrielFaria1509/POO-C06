@@ -1,17 +1,10 @@
 package classes;
 import classes.Pessoa;
-public class Filha3 {
+public class Filha3 extends Pessoa{
     private String nome;
-    private Integer idade;
-    public Filha3(String nome,Integer idade) {
+    private int idade;
+    public Filha3(String nome,int idade) {
         super(nome,idade);
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public Integer getIdade() {
-        return idade;
-    }
 }

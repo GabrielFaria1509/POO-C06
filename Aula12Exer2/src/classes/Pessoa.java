@@ -2,9 +2,9 @@ package classes;
 
 public abstract class Pessoa implements Comparable<Pessoa>{
    private String nome;
-    private Integer idade;
+    private int idade;
 
-    public Pessoa(String nome, Integer idade) {
+    public Pessoa(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
     }
@@ -15,7 +15,7 @@ public abstract class Pessoa implements Comparable<Pessoa>{
         return nome;
     }
 
-    public Integer getIdade() {
+    public int getIdade() {
         return idade;
     }
 
