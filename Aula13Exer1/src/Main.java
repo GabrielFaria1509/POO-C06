@@ -11,7 +11,9 @@ public class Main {
         conta.addCliente(cliente2);
         conta.addCliente(cliente3);
 
+        conta.mosrarInfo();
 
+        System.out.println("Código executado até o final ! ");
 
 
     }

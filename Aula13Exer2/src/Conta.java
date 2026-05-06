@@ -17,22 +17,6 @@ public class Conta {
         this.clientes.add(cliente);
     }
 
-    public int getLimite() {
-        return limite;
-    }
-
-    public void setLimite(int limite) {
-        this.limite = limite;
-    }
-
-    public int getSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(int saldo) {
-        this.saldo = saldo;
-    }
-
     public void mosrarInfo(){
         System.out.println("--- Informações da Conta ---");
         System.out.println("Saldo: " + this.saldo);
@@ -48,6 +32,18 @@ public class Conta {
             }
         }
 
+
+    }
+
+    public void sacar(double valor) throws  SaldoInsuficienteException{ //se uso throws sou obrigado a tratr exceção
+        if (valor > (this.saldo + this.limite)) {
+            // Lançando a exceção com a mensagem desejada(Envio ela para o construtor da classe de exceção personalizada)
+            throw new SaldoInsuficienteException("Erro: Saldo e limite insuficientes para o saque!");
+        }
+        else{
+            this.saldo -= valor;
+            System.out.println("Saque de R$ : " + valor + "realizado");
+        }
 
     }
 }
