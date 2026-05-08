@@ -17,7 +17,7 @@ public class Main {
             Map<String,String> conifg = new HashMap<>(); //para armazenar conteúdo
 
             conteudo.forEach((linha) -> { //For para cada linha do arquivo
-                String[] linhaquebrada= linha.split("=");//(strip)Quebro quando acho =
+                String[] linhaquebrada= linha.split("=");//(strip)Quebro quando acho =,strip tira espaço em branco
                 conifg.put(linhaquebrada[0],linhaquebrada[1].strip());
                 System.out.println("Professor : " + linhaquebrada[0] + "Matéria : " + linhaquebrada[1]);
             });
